@@ -1,58 +1,175 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Dan Alexandru by xR86</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Dan Alexandru</h1>
-      <h2 class="project-tagline">CS student</h2>
-    </section>
+    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+      <main class="mdl-layout__content">
+        <div class="demo-blog__posts mdl-grid">
+          <div class="mdl-card repo-main mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="https://github.com/xR86/ml-stuff">ml-stuff</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>xR86</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card logo-card mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <a href="https://github.com/xR86">
+              <button class="mdl-button button-1 mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+                <!-- <i class="material-icons mdl-color-text--white" role="presentation">add</i>
+                <span class="visuallyhidden">add</span> -->
+                
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/dan-alexandru-8329a4b5">
+              <button class="mdl-button button-2 mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </button>
+            </a>
+            <a href="http://students.info.uaic.ro/~dan.alexandru/">
+              <button class="mdl-button button-3 mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+                <i class="material-icons mdl-color-text--white" role="presentation">computer</i>
+                <span class="visuallyhidden">computer</span>
+              </button>
+            </a>
+            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+              <img src="images/logo.png">
+              Dan Alexandru
+            </div>
+            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+              <div>
+                <strong>xR86</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card repo-1 mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="https://github.com/xR86/cluster-garage">cluster-garage</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              SPA (dashboard) for team management
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>xR86</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card repo-2 mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="https://github.com/xR86/algo">Algo</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              a bit of everything
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>xR86</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card repo-3 mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="https://github.com/xR86/tw-project">tw-project</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              Free Code Camp Data Visualizer
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>xR86</strong>
+              </div>
+            </div>
+          </div>
 
-    <section class="main-content">
-      <h2>
-<a id="dan-alexandru-xr86" class="anchor" href="#dan-alexandru-xr86" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dan Alexandru <a href="https://github.com/xR86" class="user-mention">@xR86</a>
-</h2>
-
-<h4>
-<a id="my-work" class="anchor" href="#my-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My work</h4>
-
-<ul>
-<li>
-<a href="https://github.com/xR86/cluster-garage">xR86/cluster-garage</a> - a SPA for team management that uses the Mongo, Node.js+Express, Angular and Grunt </li>
-<li>
-<a href="https://github.com/xR86/tw-project">xR86/tw-project</a> - a web app meant to visualize and filter FreeCodeCamp open data (uses a java json parser to parse the data into a relational database, after which the Node.js web app can query the data) - <strong>responsible for</strong> architecting the app, writing specs &amp; coordinating team effort, frontend and helping on DB/backend side</li>
-<li>
-<a href="https://github.com/xR86/rc-project">xR86/rc-project</a> - a C application that makes use of openssl to encrypt the flow between a server and a client (<strong>in progress</strong>)</li>
-<li>
-<a href="https://github.com/2B5/ip-2B5">2B5/ip-2B5</a> - a java application that constructs a graph based on building schematics and serializes the data - responsible for git workflow, architecture and writing minimal testing</li>
-<li>
-<a href="https://github.com/xR86/scripts">xR86/scripts</a> - various scripts i use in my day-to-day work</li>
-</ul>
-
-<h3>
-<a id="useful-links" class="anchor" href="#useful-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Useful links</h3>
-
-<ul>
-<li>my linkedin page: <a href="https://www.linkedin.com/in/dan-alexandru-8329a4b5">https://www.linkedin.com/in/dan-alexandru-8329a4b5</a>
-</li>
-<li>my student page: <a href="http://students.info.uaic.ro/%7Edan.alexandru/">http://students.info.uaic.ro/~dan.alexandru/</a>
-</li>
-</ul>
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+        </div>
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <a href="https://github.com/xR86/xR86.github.io" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white">View Source</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
+      });
+    });
+  </script>
 </html>
