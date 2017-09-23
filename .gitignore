@@ -2,3 +2,9 @@
 # Ignore backup backgrounds
 images/alt/*
 assets/*
+
+# Ignore new stuff
+category/*
+
+# Ignore safe files
+safe_*
