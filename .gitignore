@@ -4,7 +4,7 @@ images/alt/*
 assets/*
 
 # Ignore new stuff
-category/*
+# category/*
 
 # Ignore safe files
 safe_*
