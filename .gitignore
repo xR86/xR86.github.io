@@ -1,7 +1,6 @@
 
 # Ignore backup backgrounds
 images/alt/*
-assets/*
 
 # Ignore new stuff
 # category/*
