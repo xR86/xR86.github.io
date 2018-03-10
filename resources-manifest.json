@@ -1,0 +1,19 @@
+{
+    "TO_PRECACHE": [
+        "images/android-desktop.png",
+        "images/ios-desktop.png",
+        "images/touch/ms-touch-icon-144x144-precomposed.png",
+        "images/favicon.png",
+        
+        "https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en",
+        "https://fonts.googleapis.com/icon?family=Material+Icons",
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+        "https://code.getmdl.io/1.3.0/material.grey-orange.min.css",
+
+        "https://code.getmdl.io/1.3.0/material.min.js",
+
+        "styles.css",
+        "serviceWorker.js"
+    ],
+    "VERSION": 0
+}
