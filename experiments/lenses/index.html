@@ -1,0 +1,93 @@
+<html>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+<link rel="stylesheet" href="main.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+<br/>
+
+<div class="container-lg main">
+	<h3>DSLR Lens are f* expensive</h3><br/>
+	
+	<div class="row font-weight-bold">
+		<div class="col-3 ">Lens</div>
+		<div class="col-5">Focal Range</div>
+		<div class="col-1">AF ?</div>
+		<div class="col-1">Min Aperture</div>
+		<div class="col-2">Price</div>
+	</div>
+	<hr class="table-divider"/>
+	<div id="lensContainer" class="">
+	</div>
+	
+	<div class="row">
+		<div id="totalPrice" class="offset-10 font-weight-bold" data-toggle="tooltip" data-html="true"  data-placement="left" data-offset="0px 80px" data.arrowStyles="color: blue" title="<img src='https://i.pinimg.com/736x/40/bc/93/40bc93a53c45c346ef964fc7ddcfca96.jpg' class='img-responsive tooltip--image'/>">x RON total</div>
+	</div>
+	
+	<div class="row table-filters">
+		<div class="col-3 align-self-center">
+			<input id="lensFilter" type="text" class="form-control" placeholder="Lens Name Filter"/>
+		</div>
+		<div class="col-5 align-self-center">
+			<input type="text" id="rangeFilter" name="" value="" />
+		</div>
+		<div class="col-1 align-self-center">
+			<div class="custom-control custom-switch">
+				<input id="autofocusFilter" type="checkbox" class="custom-control-input">
+				<label class="custom-control-label" for="autofocusFilter"></label>
+			</div>
+		</div>
+		<div class="col-1 align-self-center" style="padding-left: 0">
+			<input id="apertureFilter" type="text" class="form-control" placeholder="&lt;= 4"/>
+		</div>
+		<div class="col-2 align-self-center" style="padding-left: 0">
+			<input id="priceFilter" type="text" class="form-control" placeholder="&lt;= 5000"/>
+		</div>
+	</div>
+</div>
+
+<!-- https://unicode-table.com/ro/27A6/ -->
+<div class="container-lg todo">
+	<h5><kbd>TODO</kbd></h5>
+	
+	<p>Update lens data file structure:
+	</p>
+	<ul>
+		<li>lens category (eg: fisheye, zoom, superzoom)</li>
+		<li>sensor type (DX vs FX)</li>
+		<li>design - photo vs cine lens</li>
+		<li>lens engine, relevant for:
+		<ul>
+			<li>video - unsmooth steps or even more exaggerated focus breathing than usual might be really bad for the end result</li>
+			<li>sound - forces use of hotshoe mic</li>
+			<li>macro - steps too big may need movement of the actual camera</li>
+		</ul>
+		</li>
+		<li>ranking scores for chroma/geom abberations ?</li>
+	</ul>
+	<p>display focal range for owned lenses (or plot alternate chart - eg: <a href="https://plotly.com/javascript/bullet-charts/">plotly bullet chart</a>, <a href="https://plotly.com/javascript/getting-started/#plotlyjs-cdn">check cdn</a>)</p>
+	<p>try to integrate previews for tooltips (eg: something similar to this <a href="https://imaging.nikon.com/lineup/lens/simulator/">NIKKOR Lens Simulator</a>)</p>
+	<p class="done">enable sorting and filtering for lens, AF, min aperture and price</p>
+	<p>try to do conditional coloring (Excel-like) by mapping the prices and the min apertures to a bicolor colormap and minmax scale prices in the coloring interval; programatically insert rules per each ID</p>
+</div>
+
+<div class="tech-stack"> Powered by 
+	<img class="img-responsive" src="https://www.kindpng.com/picc/m/225-2258787_bootstrap-4-logo-png-clipart-png-download-bootstrap.png" />,
+	<img class="img-responsive" src="http://ionden.com/a/plugins/ion.rangeSlider/res/img/logo.png" />
+</div>
+
+
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="main.js"></script>
+
+</html>

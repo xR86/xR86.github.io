@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:900|Open+Sans&display=swap');
+
+:root {
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+:root::-webkit-scrollbar {
+	width: 0.5rem;
+}
+:root::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+:root::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+
+.criteria-ok, .criteria-not-ok { color: #FFF; }
+.criteria-ok { background-color: green; }
+.criteria-not-ok { background-color: red; }
+
+.owned { background-color: #EEE; color: #AAA; }
+
+.tooltip .arrow { display: none!important; }
+.tooltip.bs-tether-element-attached-left .tooltip-inner::before { display: none!important; }
+
+
+.tooltip--image {
+	height: 10rem;
+	margin-right: 20rem;
+}
+.tooltip > .arrow::before {
+  border-bottom-color: #757E94;
+}
+
+#totalPrice {
+	background-color: #effff9;
+	padding: 0.5rem 0rem; 
+	width: 8rem;
+}
+
+.main.container {
+	margin-top: 10vh;
+}
+.table-divider { margin-top: 0.5rem; margin-bottom: 1rem; }
+
+#lensContainer {
+	height: 60vh;
+	overflow-x: hidden; /*there was no need until overflow-y was introduced*/
+	overflow-y: scroll;
+}
+
+.lens { padding: 1rem 0;}
+
+/* .focal-range .irs.irs--flat {
+	font-size: 20px!important;
+}
+
+.focal-range .irs.irs--flat {
+	height: 10rem;
+} */
+
+.lens-price {
+	font-family: 'Lato', sans-serif;
+}
+ion-range {
+    --pin-background: black;
+    --pin-color: red;
+    font-family: sans-serif;
+}
+
+
+.table-filters {
+	margin: 0rem 1rem;
+}
+
+.tech-stack{
+	display: none;
+	position: absolute;
+	bottom: 0;
+}
+.tech-stack img { height: 2rem; }
+
+.todo { margin-top: 1rem; margin-bottom: 1rem; }
+.todo p { margin: 0; }
+.todo p::before { content: "\27A6"; }
+.todo p.done { text-decoration: line-through; }
