@@ -1,6 +1,6 @@
 [
 {
-	"name": "Canon EF-S 18-55mm Obiectiv Foto DSLR F4-5.6 IS STM Whitebox",
+	"name": "Canon EF-S 18-55mm F4-5.6 IS STM Whitebox",
 	"priceRON": 500,
 	"owned": true,
 	"minFocal": 18,
@@ -13,7 +13,7 @@
 	"lensType": "zoom",
 	"link": "https://www.f64.ro/canon-ef-s-18-55mm-f4-5-6-is-stm--whitebox-/p"
 },{
-	"name": "Canon EF 50mm Obiectiv Foto DSLR F1.8 STM",
+	"name": "Canon EF 50mm F1.8 STM",
 	"priceRON": 600,
 	"owned": true,
 	"minFocal": 50,
@@ -26,7 +26,7 @@
 	"lensType": "prime",
 	"link": "https://www.f64.ro/canon-ef-50mm-f-1-8-stm/p"
 },{
-	"name": "Canon EF-S 24mm Obiectiv Foto DSLR F2.8 STM",
+	"name": "Canon EF-S 24mm F2.8 STM",
 	"priceRON": 800,
 	"owned": false,
 	"minFocal": 24,
@@ -156,7 +156,7 @@
 	"lensType": "zoom",
 	"link": "https://www.f64.ro/sigma-18-300mm-f3-5-6-3-dc-macro-os-hsm-canon-c/p"
 },{
-	"name": "Sigma 8-16mm Obiectiv Foto DSLR F4.5-5.6 HSM",
+	"name": "Sigma 8-16mm F4.5-5.6 HSM",
 	"priceRON": 2582,
 	"owned": false,
 	"minFocal": 8,
@@ -182,7 +182,7 @@
 	"lensType": "prime",
 	"link": "https://www.f64.ro/sigma-30mm-f-1-4-dc-hsm-art-canon-ef-s/p"
 },{
-	"name": "Tokina ATX-I 11-16mm Obiectiv Foto DSLR F2.8 DX CF",
+	"name": "Tokina ATX-I 11-16mm F2.8 DX CF",
 	"priceRON": 2300,
 	"owned": false,
 	"minFocal": 11,
@@ -338,7 +338,7 @@
 	"lensType": "zoom",
 	"link": "https://www.f64.ro/sigma-50-100mm-f1-8-dc-hsm-canon-a/p"
 },{
-	"name": "Tamron 18-400mm Obiectiv Foto DSLR F/3.5-6.3 Di II VC HLD",
+	"name": "Tamron 18-400mm F/3.5-6.3 Di II VC HLD",
 	"priceRON": 2990,
 	"owned": false,
 	"minFocal": 18,
@@ -442,7 +442,7 @@
 	"lensType": "zoom",
 	"link": "https://www.f64.ro/tokina-atx-11-16mm-f-2-8-pro-dx-ii-pentru-canon-af/p"
 },{
-	"name": "Sigma 17-50mm Obiectiv Foto DSLR F2.8 EX HSM OS",
+	"name": "Sigma 17-50mm F2.8 EX HSM OS",
 	"priceRON": 1760,
 	"owned": false,
 	"minFocal": 17,
